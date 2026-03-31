@@ -1,6 +1,6 @@
 import java.io.File;
 
-public class Program6 {
+public class program6 {
     public static void main(String[] args) {
         // Points to the current directory where the program is running
         String directoryPath = "."; 
