@@ -1,7 +1,7 @@
 import java.io.*;
 import java.net.*;
 
-public class Program7Server {
+public class program7Server {
     public static void main(String[] args) {
         try {
             // FIXED: Added the missing semicolon here
