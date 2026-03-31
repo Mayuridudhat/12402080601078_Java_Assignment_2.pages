@@ -3,7 +3,7 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Program8 extends JFrame {
+public class program8 extends JFrame {
     
     private JTextField principalField, rateField, yearsField;
     private JLabel resultLabel;
@@ -57,7 +57,7 @@ public class Program8 extends JFrame {
     public static void main(String[] args) {
         // Run GUI on Event Dispatch Thread for thread safety
         SwingUtilities.invokeLater(() -> {
-            Program8 calculator = new Program8();
+            program8 calculator = new program8();
             calculator.setVisible(true);
         });
     }
