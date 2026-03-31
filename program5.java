@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Program5 {
+public class program5 {
     public static void main(String[] args) {
         String filename = "sample_text.txt";
 
