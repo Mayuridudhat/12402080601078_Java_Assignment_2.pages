@@ -1,5 +1,6 @@
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 class PrimeUtil {
     // Helper method to check if a number is prime
@@ -49,14 +50,21 @@ public class Program1 {
         try { t2.join(); } catch (InterruptedException e) { e.printStackTrace(); }
 
         // 3. Using Executor Framework
-        System.out.print("Using Executor Framework (21-30): ");
         ExecutorService executor = Executors.newSingleThreadExecutor();
         executor.submit(() -> {
+            System.out.print("Using Executor Framework (21-30): ");
             for (int i = 21; i <= 30; i++) {
                 if (PrimeUtil.isPrime(i)) System.out.print(i + " ");
             }
             System.out.println();
         });
+        
         executor.shutdown();
+        try {
+            // Wait for executor to finish so output isn't cut off
+            executor.awaitTermination(5, TimeUnit.SECONDS);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
