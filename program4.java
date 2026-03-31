@@ -37,7 +37,7 @@ class PriceComparator implements Comparator<Book> {
     }
 }
 
-public class Program4 {
+public class program4 {
     public static void main(String[] args) {
         List<Book> books = new ArrayList<>();
         books.add(new Book(3, "Java Programming", 45.50));
