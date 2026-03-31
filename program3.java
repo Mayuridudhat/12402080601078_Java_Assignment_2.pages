@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Program3 {
+public class program3 {
     public static void main(String[] args) {
         System.out.println("=== CRUD using ArrayList ===");
         List<String> list = new ArrayList<>();
