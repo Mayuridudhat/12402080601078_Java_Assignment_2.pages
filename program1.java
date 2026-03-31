@@ -35,7 +35,7 @@ class PrimeRunnable implements Runnable {
     }
 }
 
-public class Program1 {
+public class program1 {
     public static void main(String[] args) {
         System.out.println("=== Prime Number Generator using Multithreading ===\n");
 
